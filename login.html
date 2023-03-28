@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./js/bootstrap.js">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+    <script src="./js/login.js"></script>
+    <title>Login page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-left">Login Page</h1>
+                <p class="text-left">Enter the details to login</p>
+                <p>Don't have an account? <a href="./register.html">Register</a>.</p>
+                <strong><span id="response-message" style="font-size:16px"></span></strong>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-left">LOGIN</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="glyphicon-pencil"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="label col-md-2 control-label">E-Mail</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email id">
+                        <strong><span id="email-availability-status" style="font-size:16px"></span></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Password</label>
+                    <div class="col-md-10">
+                        <input type="password" class="form-control" id="psw" name="psw" placeholder="Enter password">
+                        <strong><span id="password-status" style="font-size:16px"></span></strong>
+                        <input type="checkbox"><small>Remember me!</small>
+                    </div>
+                </div>
+                <a id="button" onclick="login_status()">
+                    <div class="btn btn-info">Login</div>
+                </a>
+                <a href="./login.html">
+                    <div class="btn btn-warning">Cancel</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>

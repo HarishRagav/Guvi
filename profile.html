@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./js/bootstrap.js">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/profile.js"></script>
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <p>Welcome <span id="user-name"></span>!!!</p>
+    <button id="logout" style="float:right;margin-right:20px;">Log out</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-left">Profile Page</h1>
+                <img class="text-left" src="./assets/images.png" alt="image here" />
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="text-left">YOUR DETAILS</h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="label col-md-2 control-label">User Name</label>
+                    <div class="col-md-10">
+                        <span id="username"></span>
+                        <button id="userupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Email</label>
+                    <div class="col-md-10">
+                        <span id="email"></span>
+                        <button id="emailupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Phone</label>
+                    <div class="col-md-10">
+                        <span id="phone"></span>
+                        <button id="phoneupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">DOB</label>
+                    <div class="col-md-10">
+                        <input type="date" id="dob" class="form-control" name="dob" placeholder="Enter dob">
+                        <button id="dobupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Age</label>
+                    <div class="col-md-10">
+                        <span id="age"></span>
+                        <input type="text" id="ag" class="form-control" name="ag" placeholder="Enter age">
+                        <button id="ageupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Gender</label>
+                    <div class="col-md-10">
+                        <span id="gender"></span>
+                        <input type="text" id="gen" class="form-control" name="gen" placeholder="Enter gender">
+                        <button id="genupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Address</label>
+                    <div class="col-md-10">
+                        <span id="address"></span>
+                        <input type="textarea" id="add" class="form-control" name="add" placeholder="Enter address">
+                        <button id="addupdate" class="btn btn-info">Update</button>
+                    </div>
+                </div>
+
+</body>
+
+</html>

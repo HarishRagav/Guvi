@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./js/bootstrap.js">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-left">Registration Form</h1>
+                <p class="text-left">Complete the form to create an Account</p>
+                <p>Already have an account? <a href="./login.html">Login</a>.</p>
+                <strong><span id="response-message" style="font-size:16px"></span></strong>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-left">REGISTRATION</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="glyphicon-pencil"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="label col-md-2 control-label">User Name</label>
+                    <div class="col-md-10">
+                        <input type="text" id="username" class="form-control" name="username" placeholder="Enter username" required>
+                        <strong><span id="username-availability-status" style="font-size:16px"></span></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">E-Mail</label>
+                    <div class="col-md-10">
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Enter email id" required>
+                        <strong><span id="email-availability-status" style="font-size:16px"></span></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Phone Number</label>
+                    <div class="col-md-10">
+                        <input type="tel" id="ph" class="form-control" name="phone" placeholder="Enter phone number" required>
+                        <strong><span id="phone_validation" style="font-size:16px"></span></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Password</label>
+                    <div class="col-md-10">
+                        <input type="password" id="psw" class="form-control" name="password" placeholder="Enter password" required>
+                        <strong><span id="password_validation" style="font-size:16px"></span></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Confirm Password</label>
+                    <div class="col-md-10">
+                        <input type="password" id="cpsw" class="form-control" name="cpsw" placeholder="Confirm password" required>
+                        <strong><span id="cpassword_validation" style="font-size:16px"></span></strong><br>
+                    </div>
+                </div>
+                <button onclick="registration_status()" id="btn" class="btn btn-info">Register</button>
+                <a href="#">
+                    <div class="btn btn-warning">Cancel</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/register.js"></script>
+    <!-- </form> -->
+</body>
+
+</html>
